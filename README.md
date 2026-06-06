@@ -19,7 +19,10 @@ curl -sSL https://raw.githubusercontent.com/PirMorshed/Pir-GRE/main/Pir-GRE.sh -
 ```
 این اسکریپت با بازنویسی کامل و جایگزینی IPTables به جای fork و socat، به شدت سبک‌سازی شده و اکنون در ترافیک‌های سنگین و تعداد کاربران بالا، عملکرد فوق‌العاده‌ای ارائه می‌دهد. با حل کامل مشکلات مصرف CPU و RAM، این ابزار پایداری سرور شما را تضمین می‌کند. علاوه بر این، با استفاده از بخش‌های مدیریتی و بهینه‌سازی پروتکل TCP، می‌توانید حتی در شدیدترین اختلالات شبکه نیز ارتباطی پایدار و بدون افت کیفیت داشته باشید.
 
-📌### این نسخه، ورژن اختصاصی و شده برای PirMorshed است.
+> [!IMPORTANT]
+> "This version has been customized and exclusively developed for PirMorshed."
+> 
+> «این نسخه سفارشی‌سازی شده و منحصراً برای پیر مرشد توسعه داده شده است.»
 
 ============================================================================
 
@@ -125,3 +128,9 @@ server-automation
 iran-server
 tunnel-management
 
+============================================================================
+
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/PirMorshed/Pir-GRE.svg?background=%23d0d0d0&axis=%23161616&line=%230c00f2)](https://starchart.cc/PirMorshed/Pir-GRE)
+
+                    
