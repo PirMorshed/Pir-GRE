@@ -5,13 +5,13 @@ Pir-GRE is a powerful Bash-based solution for deploying and managing GRE tunnels
 
 Designed for simplicity and reliability, PIR-GRE offers a fully interactive terminal interface that allows administrators to configure, maintain, and troubleshoot GRE infrastructures without manually editing network configurations.
 
-=========================================================================================
+============================================================================
 
 ### Fast Setup 
 ```bash
 curl -sSL https://raw.githubusercontent.com/PirMorshed/Pir-GRE/main/Pir-GRE.sh -o Pir-GRE.sh && chmod +x Pir-GRE.sh && ./Pir-GRE.sh
 ```
-=========================================================================================
+============================================================================
 
 ### نصب سریع اسکریپت
 ```bash
@@ -20,8 +20,7 @@ curl -sSL https://raw.githubusercontent.com/PirMorshed/Pir-GRE/main/Pir-GRE.sh -
 این اسکریپت با بازنویسی کامل و جایگزینی IPTables به جای fork و socat، به شدت سبک‌سازی شده و اکنون در ترافیک‌های سنگین و تعداد کاربران بالا، عملکرد فوق‌العاده‌ای ارائه می‌دهد. با حل کامل مشکلات مصرف CPU و RAM، این ابزار پایداری سرور شما را تضمین می‌کند. علاوه بر این، با استفاده از بخش‌های مدیریتی و بهینه‌سازی پروتکل TCP، می‌توانید حتی در شدیدترین اختلالات شبکه نیز ارتباطی پایدار و بدون افت کیفیت داشته باشید.
 
 📌 این نسخه، ورژن اختصاصی و Custom شده برای PirMorshed است.
-
-=========================================================================================
+============================================================================
 
 ### Features 
 ✅ Interactive CLI Interface
@@ -98,7 +97,7 @@ Systemd
 iproute2
 iptables
 
-=========================================================================================
+============================================================================
 
 Supported Configurations
 Iran Server ↔ Foreign Server
@@ -108,7 +107,8 @@ TCP & UDP Traffic
 Custom MTU
 Automated Tunnel Rotation
 
-=========================================================================================
+============================================================================
+
 gre
 gre-tunnel
 gre-network
