@@ -1,65 +1,126 @@
-# Proj.sbs (by Proj.at)
+README Introduction
+Pir-GRE
 
-> 🌎 Get your own proj.sbs subdomains, free for open-source developers. (by Proj.at)
+Pir-GRE is a powerful Bash-based solution for deploying and managing GRE tunnels between Iran and foreign servers. The project automates tunnel creation, port forwarding, service management, MTU tuning, and tunnel regeneration using Systemd services and IPTables.
 
-> [!NOTE]  
-> Please note that all the content on Proj.sbs is created by users. **Proj.at is not responsible for its content and opinions.** If the content on it makes you feel uncomfortable, please report it to us. You can send email to *report@proj.sbs* or [click here](https://github.com/proj-at/subdomains/issues/new?assignees=&labels=report&projects=&template=report.md&title=Report)
+Designed for simplicity and reliability, PIR-GRE offers a fully interactive terminal interface that allows administrators to configure, maintain, and troubleshoot GRE infrastructures without manually editing network configurations.
 
+=========================================================================================
 
-## Register
-
-1. Fork this repository to your own account.
-2. Copy the `template.js` in the `domains` folder and rename it to your subdomain name. (for `abc.proj.sbs`, the file name should be `abc.js`).
-3. Move the file to the domain folder, (for `abc.proj.sbs`, the file path should be `domains/proj.sbs/abc.js`) 
-4. Edit the file, and fill in the information.
-5. Commit the changes and create a pull request to `proj-at/subdomains:main`.
-6. Wait for the review and merge.
-
-## Formats
-
-```js
-// change the file to [sub].js
-// e.g. `foo.js`
-export default {
-    owner: {
-        // your github username
-        user: "proj-at",
-        // your github email
-        email: "github@proj.at",
-    },
-    records: [
-        // can include multiple records, if some of them conflict, may be overwritten
-        {
-            // type of DNS record
-            type: "CNAME",
-            // content of the record
-            record: "cname.vercel-dns.com.",
-            // using Cloudflare CDN
-            proxied: true,
-            // TTL, (s), must be between 60 and 86400
-            ttl: 60,
-        },
-        {
-            // type of DNS record
-            type: "TXT",
-            // content of the record
-            record: "x...",
-            // TTL, (s), must be between 60 and 86400
-            ttl: 60,
-        },
-        // ...
-    ]
-}
+### Fast Setup 
+```bash
+curl -sSL https://raw.githubusercontent.com/PirMorshed/Pir-GRE/main/Pir-GRE.sh -o Pir-GRE.sh && chmod +x Pir-GRE.sh && ./Pir-GRE.sh
 ```
+=========================================================================================
 
-Once the branch has merged, you can access your subdomain, enjoy ur `proj.sbs` domain.
+### نصب سریع اسکریپت
+```bash
+curl -sSL https://raw.githubusercontent.com/PirMorshed/Pir-GRE/main/Pir-GRE.sh -o Pir-GRE.sh && chmod +x Pir-GRE.sh && ./Pir-GRE.sh
+```
+این اسکریپت با بازنویسی کامل و جایگزینی IPTables به جای fork و socat، به شدت سبک‌سازی شده و اکنون در ترافیک‌های سنگین و تعداد کاربران بالا، عملکرد فوق‌العاده‌ای ارائه می‌دهد. با حل کامل مشکلات مصرف CPU و RAM، این ابزار پایداری سرور شما را تضمین می‌کند. علاوه بر این، با استفاده از بخش‌های مدیریتی و بهینه‌سازی پروتکل TCP، می‌توانید حتی در شدیدترین اختلالات شبکه نیز ارتباطی پایدار و بدون افت کیفیت داشته باشید.
 
-## About Proj.sbs
+📌 این نسخه، ورژن اختصاصی و Custom شده برای PirMorshed است.
 
-Proj.sbs means `project, side by side`. It's a free subdomain service for open-source developers. You can use it for your open-source projects or your own website.
+=========================================================================================
 
+### Features 
+✅ Interactive CLI Interface
 
+Easy-to-use menu system
+Real-time action logs
+Automatic validation of user inputs
 
-## Thanks
+✅ GRE Tunnel Management
 
-We use [Cloudflare](https://www.cloudflare.com/) DNS to manage our domain records, and its CDN to provide global service.
+Create GRE tunnels between Iran and Foreign servers
+Automatic IP assignment
+Automatic GRE key generation
+Persistent Systemd services
+
+✅ Port Forwarding
+
+TCP forwarding
+UDP forwarding
+Single port support
+Multiple ports support
+Port range support
+IPTables Kernel-Space forwarding
+
+✅ Service Management
+
+Start services
+Stop services
+Restart services
+Enable on boot
+Disable services
+Service status monitoring
+
+✅ MTU Management
+
+Custom MTU during installation
+Change MTU after deployment
+Automatic Systemd service updates
+
+✅ Automation System
+
+Scheduled GRE regeneration
+Cron-based automation
+Timezone synchronization
+Tunnel recreation scripts
+Automatic service restoration
+
+✅ Backup & Recovery
+
+Automatic service backup
+GRE configuration recovery
+Forwarder recovery
+Systemd backup management
+
+✅ Cleanup Tools
+
+Full GRE removal
+Forwarder cleanup
+Systemd cleanup
+Route cleanup
+Conntrack cleanup
+Automation cleanup
+
+✅ Network Optimization
+
+RP Filter handling
+IP Forwarding management
+Persistent GRE interfaces
+Automatic route maintenance
+Requirements
+Ubuntu / Debian
+Root Access
+Systemd
+iproute2
+iptables
+
+=========================================================================================
+
+Supported Configurations
+Iran Server ↔ Foreign Server
+Multiple GRE Tunnels
+Multiple Port Forwarders
+TCP & UDP Traffic
+Custom MTU
+Automated Tunnel Rotation
+
+=========================================================================================
+gre
+gre-tunnel
+gre-network
+iptables
+nat
+dnat
+udp-forwarding
+tcp-forwarding
+systemd
+bash-script
+linux-networking
+server-automation
+iran-server
+tunnel-management
+
